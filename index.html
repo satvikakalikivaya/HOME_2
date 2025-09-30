@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FitGear - Gym Accessories</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header / Navigation -->
+  <header>
+    <div class="logo">FitGear</div>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#products">Products</a></li>
+        <li><a href="#testimonials">Testimonials</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <h1>Elevate Your Fitness</h1>
+    <p>Top-quality gym accessories for every fitness enthusiast.</p>
+    <button onclick="scrollToProducts()">Shop Now</button>
+  </section>
+
+  <!-- Products Section -->
+  <section id="products" class="products">
+    <h2>Featured Products</h2>
+    <div class="product-grid">
+      <div class="product-card">
+        <img src="https://via.placeholder.com/200x200?text=Dumbbells" alt="Dumbbells">
+        <h3>Dumbbells Set</h3>
+        <p>$50</p>
+        <button onclick="addToCart('Dumbbells Set')">Add to Cart</button>
+      </div>
+      <div class="product-card">
+        <img src="https://via.placeholder.com/200x200?text=Resistance+Bands" alt="Resistance Bands">
+        <h3>Resistance Bands</h3>
+        <p>$20</p>
+        <button onclick="addToCart('Resistance Bands')">Add to Cart</button>
+      </div>
+      <div class="product-card">
+        <img src="https://via.placeholder.com/200x200?text=Yoga+Mat" alt="Yoga Mat">
+        <h3>Yoga Mat</h3>
+        <p>$25</p>
+        <button onclick="addToCart('Yoga Mat')">Add to Cart</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section id="testimonials" class="testimonials">
+    <h2>What Our Customers Say</h2>
+    <div class="testimonial">
+      <p>"High-quality products that make my workouts enjoyable!"</p>
+      <span>- John D.</span>
+    </div>
+    <div class="testimonial">
+      <p>"Fast shipping and excellent service. Highly recommended!"</p>
+      <span>- Emily R.</span>
+    </div>
+  </section>
+
+  <!-- Contact / Newsletter Section -->
+  <section id="contact" class="contact">
+    <h2>Subscribe for Updates</h2>
+    <p>Get the latest fitness gear and offers directly in your inbox.</p>
+    <form id="newsletter-form">
+      <input type="email" placeholder="Enter your email" required>
+      <button type="submit">Subscribe</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 FitGear. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
